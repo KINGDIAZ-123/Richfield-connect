@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</title>
+        <!---Linking to Css as well with JavaScript and google font-->
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="icon" href="ME.png" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script defer src="js/signup.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            <nav>
+                <div class="logo">
+                    <img src="ME.png" alt="Richfield logo">
+                    Richfield Connect
+                </div>
+                <div class="nav-links">
+                    <a href="Home.html">Home</a>
+                    <a href="About.html">About</a>
+                    <a href="Profile.html">Profile</a>
+                    <a href="Feed.html">Feed</a>
+                    <a href="signup.html">Signup</a>
+                </div>
+            </nav>
+            <!---MAIN SECTION-->
+        <section class="form-section">
+
+
+            <!--Sign Up Form-->
+            <form id="signupForm">
+                <h1>Create Your Account</h1>
+            
+                <input type="text" id="name" placeholder="Full name">
+                <span id="nameError"></span>
+                <input type="text" id="studentNumber" placeholder="Student Number">
+                <span id="studentNumberError"></span>
+                <input type="text" id="campus" placeholder="Campus/DL">
+                <span id="error" id="campusError"></span>
+                <input type="email" id="email" placeholder="Email">
+                <span id="emailError"></span>
+                <input type="password" id="password" placeholder="Password">
+                <span id="passwordError"></span>
+                <input type="password" id="confirmPassword" placeholder="ConfirmPassword">
+                <span id="confirmPasswordError"></span>
+                <textarea id="bio" placeholder="bio"></textarea>
+                <input type="text" id="interests" placeholder='interests'>
+                <span id="error" id="interestsError"></span>
+                <button type="submit">Register</button>
+            </form>
+
+            <!--This could be our Live preview-->
+            <div class="Preview-Card">
+                <h2>Live Profile View</h2>
+                <h3 id="previewName">
+                    Your Name
+                </h3>
+                <p id="previewBio">
+                    your bio wll appear here...
+                </p>
+                <div id="previewInterests"></div>
+            </div>
+        </section>
+        
+    </body>
+</html>

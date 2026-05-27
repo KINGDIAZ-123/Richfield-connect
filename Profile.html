@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="CSS/style.css"">
+    <link rel="icon" href="ME.png" type="image/x-icon">
+<!-- Google Font/CSS/JAVA-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="js/profile.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="ME.png" alt="Richfield logo">
+            Richfield Connect
+        </div>   
+        <div class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Profile.html">Profile</a>
+            <a href="Feed.html">Feed</a>
+            <a href="signup.html">Signup</a>
+        </div>
+    </nav>
+    <section class="container">
+               
+        <div class="preview-card">
+            <h1>Student Profile</h1> 
+            <hr>
+            <h2 id="profileName"></h2>
+            <br>
+            <p>
+                <strong>Student Number:</strong>
+                <span id="profileStudentNumber"></span>
+            </p>
+            <br>
+            <p>
+                <strong>Campus:</strong>
+                <span id="profileCampus"></span>
+            </p>
+            <br>
+            <p>
+                <strong>Email:</strong>
+                <span id="profileEmail"></span>
+            </p>
+            <br>
+            <p>
+                <strong>Bio:</strong>
+                <span id="profileBio"></span>
+            </p>
+            <br>
+            <h3>Interests</h3>
+            <div id="profileInterests"></div>
+            <br>
+            
+            <!--MY DELETE FUNCTION BUTTON-->
+        <button id="deleteBtn" class="deleteBtn">Delete Profile</button>
+        </div>  
+    </section>
+
+ <!-- FOOTER -->
+    <footer>
+        <p>
+            Richfield Connect &copy; 2026
+        </p>
+    </footer>
+</body>
+</html>
