@@ -1,0 +1,368 @@
+/*styling of my CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ), url("RICHFIELD.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: blanchedalmond;
+    min-height: 100vh;
+    animation: fadeIn 0.6s ease-in;
+}
+
+/* Navigations links styles*/
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 18px 8%;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+    background: linear-gradient(to bottom right, red, blue);
+}
+
+/* LOGO */
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+     height: 40px;
+    width: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.home-text{
+    text-align: center;
+    line-height: 1.9;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* LIST */
+ul{
+    margin-top: 20px;
+    list-style-position: inside;
+    line-height: 2;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 45px;
+    color: burlywood;
+}
+
+hr{
+    padding: 2px;
+    background-color: black;
+    box-shadow: 0 2px 10px;
+    margin: 20px auto;
+    border: none;
+    height: 3px;
+    width: 60%;
+    border: none;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px, 12px;
+    font-size: 17px;
+    position: relative;
+    margin-left:20px;
+    letter-spacing: 0.3px;
+    transition: all 0.3s, ease-in-out;
+}
+
+nav a:after{
+    content: "";
+    position: absolute;
+    background-color: gold;
+    height: 3px;
+    width: 0%;
+    left: 0%;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: antiquewhite;
+    transform: translateY(-2px);
+}
+
+nav a:hover:after{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 85vh;
+    padding: 40px;
+}
+
+/*HERO CONTENT*/
+.hero-content{
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+
+
+button{
+    font-size: 16px;
+    font-weight: bold;
+    width: 12%;
+    height: 12%;
+    position: relative;
+    padding: 14px 35px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(to right,rgb(255, 252, 252), rgb(230, 107, 107))
+}
+
+/* BUTTON HOVER */
+
+button:hover{
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(255,215,0,0.5);
+}
+/* DELETE BUTTON FOR MY PROFILE SECTION*/
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* FEATURES SECTION */
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 60px 8%;
+}
+
+/* FEATURE CARD */
+
+.feature-card{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.feature-card:hover{
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.15);
+}
+
+/*THE FORM SECTION*/
+.form-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 50px;
+    align-items: start;
+}
+
+form{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* INPUTS */
+
+input,
+textarea{
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+/*RED BORDER FIELDS*/
+
+input.invalid,
+textarea.invalid {
+    border: 2px solid #ff4d4d;
+}
+
+/* TEXTAREA */
+textarea{
+    resize: none;
+    height: 120px;
+}
+
+/* ERROR TEXT */
+
+.error{
+    color: #ff4d4d;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+/*PREVIEW CARD*/
+.preview-card{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    line-height: 1.8;
+}
+
+/*INTEREST TAGS*/
+.tag{
+    display: inline-block;
+    background: gold;
+    color: black;
+    padding: 8px 14px;
+    border-radius: 20px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+/* FEED POSTS */
+
+.post{
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    text-align: left;
+    line-height: 1.7;
+    animation: fadeIn 0.5s ease;
+}
+
+/* POST BUTTONS */
+
+.likeBtn,
+.deleteBtn{
+    margin-top: 15px;
+    width: auto;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+/* LIKE BUTTON */
+.likeBtn{
+    background: royalblue;
+    color: white;
+}
+
+/* LIKED STATE */
+.likeBtn.liked {
+    background: gold;
+    color: black;
+}
+/* DELETE BUTTON */
+
+.deleteBtn{
+    background: crimson;
+    color: white;
+}
+
+/*THE FOOTER*/
+footer{
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 768px){
+    nav{
+        flex-direction: column;
+    }
+    nav a{
+        margin: 10px 0;
+    }
+    h1{
+        font-size: 32px;
+    }
+
+.hero-content{
+    padding: 30px;
+}
+
+button{
+        width: 100%;
+    }
+}
+
+/*THE ANIMATIONS TO SHOWCASE THE LAYOUT*/
+@keyframes fadeIn{from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FOR OUR SMARTPHONES */
+
+@media(max-width: 768px){
+    .form-section{
+    grid-template-columns: 1fr;
+    }
+
+    textarea{
+       width: 100%;
+    }
+    .hero-content,
+    .preview-card,
+    form{
+        width: 100%;
+    }
+}

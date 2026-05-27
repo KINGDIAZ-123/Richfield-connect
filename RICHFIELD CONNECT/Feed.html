@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feed</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="ME.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="js/feed.js"></script>
+</head>
+<body>
+    <nav>
+         <div class="logo">
+            <img src="ME.png" alt="Richfield logo">
+            Richfield Connect
+        </div>
+        <div class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="signup.html">Signup</a>
+            <a href="Profile.html">Profile</a>
+            <a href="Feed.html">Feed</a>
+        </div>
+        </nav>
+
+    <section class="container">
+       <div class="hero-content"> 
+            <h1>Student Feed</h1>
+            <hr>
+            <!--CREATE POST HERE-->
+            <textarea id="postInput" placeholder="Share something on Richfield community.."></textarea>
+
+            <br><br>
+
+            <button id="postButton">Post</button>
+            <span id="feedError" class="feed-error"></span>
+
+            <!--Feed Posts-->
+
+            <div id="feedContainer"></div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Richfield Connect &copy; 2026
+        </p>
+    </footer>
+
+</body>
+</html>
